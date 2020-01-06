@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	char *token = a;
 	stack_t *stack = NULL;
 	unsigned int line = 1;
-	FILE *fp = {NULL, 0};
+	FILE *fp = NULL;
 
 	if (argc != 2)
 	{
