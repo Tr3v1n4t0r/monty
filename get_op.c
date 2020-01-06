@@ -16,7 +16,8 @@ void (*get_op(stack_t **stack, char *s, int line))(stack_t **, unsigned int)
 		{"pall", op_pall},
 		/**
 		 *{"pint", op_pint},
-		 *{"pop", op_pop},
+		 */{"pop", op_pop},
+		/**
 		 *{"swap", op_swap},
 		 */{"add", op_add},
 		{"nop", op_nop},
