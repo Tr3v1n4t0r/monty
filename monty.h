@@ -50,7 +50,7 @@ void op_pop(stack_t **, unsigned int);
 void op_swap(stack_t **, unsigned int);
 void op_add(stack_t **, unsigned int);
 void op_nop(stack_t **, unsigned int);
-/**void op_sub(stack_t **, unsigned int);
+void op_sub(stack_t **, unsigned int);
 void op_div(stack_t **, unsigned int);
 void op_mul(stack_t **, unsigned int);
 void op_mod(stack_t **, unsigned int);
@@ -58,8 +58,6 @@ void op_pchar(stack_t **, unsigned int);
 void op_pstr(stack_t **, unsigned int);
 void op_rotl(stack_t **, unsigned int);
 void op_rotr(stack_t **, unsigned int);
-void op_stack(stack_t **, unsigned int);
-void op_queue(stack_t **, unsigned int);*/
 
 /**Error prototypes*/
 void push_error(stack_t **, unsigned int);
