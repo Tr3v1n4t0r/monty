@@ -14,26 +14,28 @@ void (*get_op(stack_t **stack, char *s, int line))(stack_t **, unsigned int)
 	instruction_t ops[] = {
 		{"push", op_push},
 		{"pall", op_pall},
-		/**{"pint", op_pint},
-		{"pop", op_pop},
-		{"swap", op_swap},*/
-		{"add", op_add},
+		/**
+		 *{"pint", op_pint},
+		 *{"pop", op_pop},
+		 *{"swap", op_swap},
+		 */{"add", op_add},
 		{"nop", op_nop},
-		/**{"sub", op_sub},
-		{"div", op_div},
-		{"mul", op_mul},
-		{"mod", op_mod},
-		{"#", op_nop},
-		{"pchar", op_pchar},
-		{"pstr", op_pstr},
-		{"rotl", op_rotl},
-		{"rotr", op_rotr},
-		{"stack", op_stack},
-		{"queue", op_queue},*/
-		{NULL, NULL}
+		/**
+		 *{"sub", op_sub},
+		 *{"div", op_div},
+		 *{"mul", op_mul},
+		 *{"mod", op_mod},
+		 *{"#", op_nop},
+		 *{"pchar", op_pchar},
+		 *{"pstr", op_pstr},
+		 *{"rotl", op_rotl},
+		 *{"rotr", op_rotr},
+		 *{"stack", op_stack},
+		 *{"queue", op_queue},
+		 */{NULL, NULL}
 	};
 	int i = 0;
-        unsigned int j;
+	unsigned int j;
 
 	while (ops[i].opcode)
 	{
