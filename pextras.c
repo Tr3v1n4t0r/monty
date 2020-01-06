@@ -43,7 +43,7 @@ void op_pstr(stack_t **stack, unsigned int line)
 		{
 			if (here->n > 31 && here->n < 127)
 				putchar(here->n);
-			here = here>next;
+			here = here->next;
 		}
 		else
 			break;
