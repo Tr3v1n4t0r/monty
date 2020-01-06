@@ -40,7 +40,7 @@ void push_error(stack_t **stack, unsigned int line)
 {
 	dprintf(STDERR_FILENO, "L%u: usage: push integer\n", line);
 	free_all(stack);
-	exit(1);
+	exit(EXIT_FAILURE);
 }
 
 /**
@@ -58,7 +58,7 @@ void add_stack(stack_t **stack, int argument)
 	{
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");
 		free_all(stack);
-		exit(1);
+		exit(EXIT_FAILURE);
 	}
 	new->n = argument;
 	new->next = *stack;

@@ -24,6 +24,6 @@ void op_add(stack_t **stack, unsigned int line)
 		dprintf(STDERR_FILENO,
 			"L%u: can't add, stack too short\n", line);
 		free_all(stack);
-		exit(1);
+		exit(EXIT_FAILURE);
 	}
 }

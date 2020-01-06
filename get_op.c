@@ -51,5 +51,5 @@ void (*get_op(stack_t **stack, char *s, int line))(stack_t **, unsigned int)
 
 	dprintf(STDERR_FILENO, "L%u: unknown instruction %s\n", line, s);
 	free_all(stack);
-	exit(1);
+	exit(EXIT_FAILURE);
 }
